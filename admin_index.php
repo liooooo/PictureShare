@@ -7,7 +7,7 @@ if(isset($_SESSION["login_name"]) && $_SESSION["login_name"] == "admin") {
     $username = $_SESSION["login_name"];
 
 } else {
-    echo "<script>alert('·Ç¹ÜÀíÔ±ÎŞ·¨·ÃÎÊ');location.href='login.php';</script>";
+    echo "<script>alert('éç®¡ç†å‘˜æ— æ³•è®¿é—®');location.href='login.php';</script>";
 }
 ?>
 
@@ -16,7 +16,7 @@ if(isset($_SESSION["login_name"]) && $_SESSION["login_name"] == "admin") {
 <title>admin</title>
 <style type='text/css'>
 
-	input {font:50% "å®‹ä½“"
+	input {font:50% "ç€¹å¬©ç¶‹"
 	}
 	body {
 	background-image: url(./background/background.jpg);

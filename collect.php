@@ -6,12 +6,12 @@ include_once 'cnn/cnn.php';
 if(isset($_SESSION["login_name"])) {
     $username = $_SESSION["login_name"];
     $pic = $_GET["pic"];
-    $db = "db".$username;          //用于保存用户收藏图片信息的数据表
+    $db = "db".$username;          //鐢ㄤ簬淇濆瓨鐢ㄦ埛鏀惰棌鍥剧墖淇℃伅鐨勬暟鎹〃
     $query = "INSERT INTO $db(image_name) VALUES('$pic')";
     mysql_query($query);
     echo "<script>history.back();</script>";
 } else {
-    echo "<script>alert('注册后才能收藏哦');history.back();</script>";
+    echo "<script>alert('娉ㄥ唽鍚庢墠鑳芥敹钘忓摝');history.back();</script>";
 }
 
 ?>

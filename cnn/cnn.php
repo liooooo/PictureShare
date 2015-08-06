@@ -1,7 +1,7 @@
 <?php
 @$link = mysql_connect("localhost", "root", "123456");
 if (! $link) {
-    die("Êý¾Ý¿âÁ¬½ÓÊ§°Ü" . mysql_error());
+    die("æ•°æ®åº“è¿žæŽ¥å¤±è´¥" . mysql_error());
 }
 mysql_select_db("pictureshare");
 ?>
